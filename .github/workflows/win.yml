@@ -18,8 +18,8 @@ jobs:
       with:
         go-version: 1.18
 
-    - name: Build
-      run: go build -o output.dmg
+    - name: Upload executable
+      run: go build -o output.exe
     - uses: actions/upload-artifact@v2
       with:
-        path: output.dmg
+        path: output.exe
